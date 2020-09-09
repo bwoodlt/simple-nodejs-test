@@ -31,10 +31,10 @@ app.post("/countries/search/:searchString", async (req, res) => {
 });
 
 const getFormattedResult = (countries) => {
-  return countries.map((c) => ({
-    name: c.name,
-    capital: c.capital,
-    flag: c.flag.replace(/https/g, "sftp")
+  return countries.map((country) => ({
+    name: country.name,
+    capital: country.capital,
+    flag: country.flag.replace(/https/g, "sftp")
   }));
 };
 
