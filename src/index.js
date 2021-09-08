@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const express = require("express");
 const app = express();
 
-// const authentication = () => check for valid token, get the user and return boolean or the actual user
+// const authentication = () => check for valid token, acts like a gatewar - get the user and return boolean or the actual user
 
 // GET - https://restcountries.eu/rest/v2/all
 // POST - https://restcountries.eu/rest/v2/name/{searchString}
